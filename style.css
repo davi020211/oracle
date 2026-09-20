@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    color: black;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+button,
+input {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+a:hover,
+button:hover {
+    opacity: 0.7;
+}
+
+.pagina {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px 30px;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.assistencia {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.logo h1 {
+    font-size: 45px;
+}
+
+.caixa-login {
+    width: 500px;
+    max-width: 90%;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.logo-grande {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.logo-grande img {
+    width: 65px;
+    height: 65px;
+}
+
+.logo-grande h1 {
+    font-size: 55px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.campo {
+    width: 430px;
+    max-width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 25px;
+    background-color: #d9d9d9;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.campo::placeholder {
+    color: black;
+    font-weight: bold;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    margin-top: 50px;
+}
+
+.botao {
+    width: 150px;
+    min-height: 35px;
+    border: none;
+    border-radius: 25px;
+    background-color: #d9d9d9;
+    padding: 8px 20px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+.criar .botoes {
+    margin-top: 20px;
+}
+
+.principal {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.conteudo {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.pesquisa {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.caixa-pesquisa {
+    width: 520px;
+    max-width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    background-color: #d9d9d9;
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
+.caixa-pesquisa input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.pino {
+    font-size: 20px;
+    margin-left: 8px;
+}
+
+.categorias {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.categoria {
+    padding: 7px 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 13px;
+}
+
+.lojas {
+    background-color: #d7d7d7;
+    border-radius: 30px 30px 0 0;
+    padding: 25px;
+}
+
+.lojas h2 {
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.lista-lojas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.loja {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.loja img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.informacao {
+    padding-top: 5px;
+}
+
+.informacao h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.informacao p {
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.estrelas {
+    margin-top: 7px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.secoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.secao {
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.secao h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.secao h3 {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.secao p,
+.secao li {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.secao ul {
+    padding-left: 20px;
+}
+
+.recursos {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.recurso {
+    padding: 9px 15px;
+    border-radius: 20px;
+    background-color: #d9d9d9;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 20px 5px;
+    border-top: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+.assistencia-pagina {
+    padding: 10px 30px;
+}
+
+.assistencia-conteudo {
+    width: 850px;
+    max-width: 90%;
+    margin: 120px auto;
+}
+
+.voltar {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.voltar:before {
+    content: "← ";
+    font-size: 20px;
+}
+
+.assistencia-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.assistencia-item {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 10px 25px;
+    border-radius: 25px;
+    background-color: #d9d9d9;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.assistencia-item input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.copiar {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.copiar span {
+    flex: 1;
+}
+
+.botao-copiar {
+    border: none;
+    border-radius: 20px;
+    background-color: #bdbdbd;
+    padding: 7px 15px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+@media (max-width: 700px) {
+    .pagina {
+        padding: 15px;
+    }
+
+    .logo img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .logo h1 {
+        font-size: 32px;
+    }
+
+    .assistencia {
+        font-size: 10px;
+    }
+
+    .logo-grande img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .logo-grande h1 {
+        font-size: 40px;
+    }
+
+    .caixa-login {
+        margin-top: 70px;
+    }
+
+    .conteudo {
+        width: 100%;
+    }
+
+    .lojas {
+        padding: 18px;
+    }
+
+    .loja img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .rodape {
+        flex-direction: column;
+    }
+
+    .assistencia-conteudo {
+        margin-top: 100px;
+    }
+}
